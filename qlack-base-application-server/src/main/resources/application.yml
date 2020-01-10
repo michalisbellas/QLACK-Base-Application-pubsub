@@ -1,0 +1,21 @@
+# spring properties
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    name: qDS
+    url: url
+    username: username
+    password: password
+    initialization-mode: always
+    hikari:
+      connection-test-query: SELECT 1
+      connection-timeout: 60000
+      maximum-pool-size: 100
+      register-mbeans: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+    generate-ddl: true
+fs:
+    fs-root: <root_of_app_file_system>
