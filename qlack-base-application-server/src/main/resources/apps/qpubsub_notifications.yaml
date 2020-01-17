@@ -1,0 +1,39 @@
+# QPubSub Test Application
+# A WebDesktop application configuration
+---
+appUrl: 'http://localhost:4201'
+proxyPath: b_path
+proxyAppUrl: 'http://localhost:4201'
+version: 2.0.1
+icon: 'https://www.eurodyn.com/wp-content/uploads/2018/11/logo_efgs.png'
+iconSmall: 'https://www.eurodyn.com/wp-content/uploads/2018/11/logo_efgs.png'
+width: '800'
+minWidth: '470'
+height: '500'
+minHeight: '450'
+active: true
+multipleInstances: false
+restrictAccess: false
+resizable: true
+draggable: true
+closable: true
+minimizable: true
+maximizable: true
+system: false
+showTitle: false
+stripPrefix: false
+sensitiveHeaders: Cookie,Set-Cookie.
+applicationName: QPubSub Test Application
+lexicon:
+  - languageLocale: en
+    values:
+      - key: title
+        value: QPubSub Test Application
+      - key: description
+        value: A WebDesktop application to test QPubSub notifications functionality
+  - languageLocale: el
+    values:
+      - key: title
+        value: QPubSub Test Application
+      - key: description
+        value: Εφαρμογή του WebDesktop για την αποστολή μηνυμάτων notifications
