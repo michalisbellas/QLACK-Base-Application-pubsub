@@ -7,7 +7,6 @@ import {BaseComponent} from './shared/component/base-component';
 import {TranslateService} from '@ngx-translate/core';
 import {QNgPubSubService} from '@qlack/qng-pub-sub';
 import {MatSnackBar} from '@angular/material/snack-bar';
-import {QPubSub} from '@qlack/qpubsub';
 
 @Component({
   selector: 'app-root',
@@ -37,12 +36,6 @@ export class AppComponent extends BaseComponent implements OnInit {
     // Deactivate logs
     qPubSubService.setLogActive(false);
 
-    // Subscribe to a predefined topic to read messages from WebDesktop
-    qPubSubService.subscribe('QUserInfo', (message: QPubSub.Message) => {
-      this._snackBar.open(message.msg, 'Close', {
-        duration: 3000
-      });
-    });
   }
 
   // // Check if an expired JWT exists and remove it.

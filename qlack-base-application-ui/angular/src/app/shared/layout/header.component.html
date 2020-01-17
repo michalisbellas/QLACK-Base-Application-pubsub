@@ -5,6 +5,9 @@
   <div fxFlex fxGrow="1" class="logo-text">
     QLACK-Base-Application-UI
   </div>
+    <button  mat-icon-button (click)="publishTestMessage()" mat-button>
+      <mat-icon>mail_outline</mat-icon>
+    </button>
   <div fxFlex fxGrow="0" *ngIf="isLoggedIn()">
     <div>{{ getUserEmail() }}</div>
   </div>
