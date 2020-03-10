@@ -34,7 +34,7 @@
     "@swimlane/ngx-charts": "~12.0.1",
     "@zxing/ngx-scanner": "~2.0.1",
     "@qlack/form-validation": "^0.0.5",
-    "@qlack/qng-pub-sub": "^0.0.5",
+    "@qlack/qng-pubsub": "^1.0.0",
     "angular2-uuid": "1.1.1",
     "bf-solid": "^2.11.2",
     "file-saver": "~2.0.2",
