@@ -5,7 +5,7 @@ import {JwtHelperService} from '@auth0/angular-jwt';
 import {MatDialog} from '@angular/material/dialog';
 import {BaseComponent} from './shared/component/base-component';
 import {TranslateService} from '@ngx-translate/core';
-import {QNgPubSubService} from '@qlack/qng-pub-sub';
+import {QngPubsubService} from '@qlack/qng-pubsub';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
@@ -24,7 +24,7 @@ export class AppComponent extends BaseComponent implements OnInit {
               private jwtService: JwtHelperService,
               private dialog: MatDialog,
               private translate: TranslateService,
-              private qPubSubService: QNgPubSubService,
+              private qPubSubService: QngPubsubService,
               private _snackBar: MatSnackBar) {
 
     super();

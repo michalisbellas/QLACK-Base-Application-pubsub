@@ -41,7 +41,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {QLACKFormValidationModule} from '@qlack/form-validation';
-import {QNgPubSubModule} from '@qlack/qng-pub-sub';
+import {QngPubsubModule} from '@qlack/qng-pubsub';
 
 export function getJwtToken(): string {
   return localStorage.getItem(AppConstants.JWT_STORAGE_NAME);
@@ -95,7 +95,7 @@ export function getJwtToken(): string {
     NgProgressHttpModule,
     MatSelectModule,
     FormsModule,
-    QNgPubSubModule,
+    QngPubsubModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {BaseComponent} from '../component/base-component';
 import {AppConstants} from '../../app.constants';
-import {QNgPubSubService} from '@qlack/qng-pub-sub';
+import {QngPubsubService} from '@qlack/qng-pubsub';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +12,7 @@ export class HeaderComponent extends BaseComponent {
   // The user email extracted from JWT.
   public userEmail: string;
 
-  constructor(private qPubSubService: QNgPubSubService) {
+  constructor(private qPubSubService: QngPubsubService) {
     super();
   }
 
